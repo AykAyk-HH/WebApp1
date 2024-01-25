@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Mood</title>
+</head>
+<style>
+	div {
+	color:red;
+		background-color: blue;
+	}
+</style>
+<script>
+	function showMessage(msg){
+		document.getElementById("result").innerText = "I am feeling "+msg;
+		
+	}
+
+</script>
+<body>
+	<input type = "button" value = "Happy"  onclick = "showMessage('Happy')" />
+	<button type = "button" onclick = "showMessage('OK-ish')">OK</button>
+	<input type = "button" value = "Sad" onclick = "showMessage('SAD')">
+	<div id = "result">
+	Click a button
+	</div>
+	
+</body>
+</html>
